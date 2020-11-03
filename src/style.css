@@ -1,0 +1,32 @@
+/* color, grosor, tamaño, letra, tipo y mayus o minus h1*/
+h1 {
+        color: #044552;
+        font-weight:lighter;
+        font-size: 60px;
+        font-family:Arial Narrow Bold;
+        font-style: italic;
+        text-transform:none;
+}
+
+
+.boton_personalizado{
+  text-decoration: none;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+  background-color: #31707D;
+  border-radius: 6px;
+  border: 2px solid #134280;
+  padding: 10px 50px;
+}
+h2 {
+        color: #0e0c0c;
+        font-weight:lighter;
+        font-size: 30px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: none;
+}
+.form-actions  {
+        text-align:center;
+        }
