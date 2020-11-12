@@ -7,33 +7,41 @@
     <link rel="stylesheet" href="style.css" />
 
   </head>
+
   <body>
-<center>
+
     <header class="Page-header">
       <img src = "logo.jpeg" width="700" height="350"/>   <!--imagen de fondo-->
-      <nav>
-       <a href="index.html">Inicio</a>  <!--enlazar a volver al inicio pag -->
-       <a href="tienda.html">Tienda</a>    <!--enlazar ir a tienda-->
+
+
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>  <!--enlazar a volver al inicio pag -->
+          <li><a href="tienda.html">Tienda</a></li>    <!--enlazar ir a tienda-->
+        </ul>
       </nav>
-
-      <h1> ¡Bienvenid@!</h1>
     </header>
-
-    <main>
-      <h2> Confirma que tu Gift Card
-        <br>Puede ser utilizada con nosotros</br>
+     <div class="contenedor">
+    <main class="bienvenida">
+      <h1> ¡Bienvenid@! </h1>
+      <h2>    Confirma que tu Gift Card  <br>
+      Puede ser utilizada con nosotros
       </h2>
 
-      <!-- campo de ingreso de numero de tarjeta--><!--ejemplifica lo que debe inrgesar--><!--campo obligatorio-->
-      <input type= "digito" id="user-caracteres" placeholder="     1234 5678 9874 9874 " required/>
-      <a class="boton_personalizado" href="pag2.html">Click</a> <!--inserta boton-->
-    </main>
+      <form action=" id="formulariotarjeta" class="formulariotarjeta" method="POST">
+        <label for="inputNumero"></label>
+      <!-- campo de ingreso de numero de tarjeta-->
+      <input type= "number" id="inputNumero" placeholder="     1234 5678 9874 9874  " maxlength="16" pattern="[0-9]+" required style=" margin-bottom: 20px; width: 50%;">
+
+      <button type="submit" class="boton_personalizado">Click</button> <!--inserta boton-->
+      </form>
+</main>
+</div>
+ <div class="footer">
+    <p> @gi_isler 2020 </p>   <!--datos creador-->
+  </div>
 
     <script src="index.js" type="module"></script>
 
   </body>
-  <footer>
-    <p> @gi_isler 2020 </p>   <!--datos creador-->
-  </footer>
-</center>
 </html>
