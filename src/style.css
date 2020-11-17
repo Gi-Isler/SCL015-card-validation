@@ -33,9 +33,9 @@ img{
 
 
 .bienvenida {
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
+        display: flex;
 }
 .bienvenida h1 {
         color: #044552;
@@ -54,6 +54,12 @@ img{
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-style: none;
         align-items: center;
+}
+
+.numerotarjeta {
+        margin-bottom: 20px;
+        width: 50%;
+        justify-content: center;
 }
 
 .boton_personalizado {

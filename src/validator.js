@@ -1,8 +1,6 @@
-console.log("soy validator");
+//console.log("");
 
-//const validator = {
-//validacion=()=>{
-//return 3
-//}
-//};
-//export default validator;
+const validator = {
+validacion=()=>{
+}};
+export default validator;
