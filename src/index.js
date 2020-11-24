@@ -2,20 +2,37 @@
 //validator()
 
 
-document.getElementById("validar").addEventListener('click', function(){       //llamo, doy orden al boton
-let numerotarjeta = document.getElementById("numerotarjeta").value;            //trae digitos
+document.getElementById("validar").addEventListener('click', function(){          //llamo, doy orden al boton
+   let numerotarjeta = document.getElementById("numerotarjeta").value;            //trae digitos
+   let x = numerotarjeta.length;                                                  //cantidad de elementos del string
+   if(x<16){
+      alert("Ingrese todos los Digitos de su Gift Card")
+      document.getElementById('formulariotarjeta').reset();
+   }else{
+      let numerotarjetainvertida ="";                                      //guarda  elementos de variable invertidos
+         while (x>=0){                                                     //verifica si se cumple condicion
+         numerotarjetainvertida += numerotarjeta.charAt(x);                //envia ultima posicion del elemento a numerotarjetainvertida
+            x--;
+         parseInt(numerotarjetainvertida.trim).value;                      //Variable se toma valor se numero y  se eliminan espacios vacios dentro de ella
+         }
+let par = [];
+let impar= [];
+               for ( let i=0; i< numerotarjetainvertida.length ;i++ ) {                    //recorriendo el array
+                  if (i%2===0){                                                           //pregunta si la posicion es par
+                     par.push(numerotarjetainvertida[i]*2);                               //posicion par multiplicada
+                      for (let j in par){
+                           if (par [j]>9){                                                //identifica resultado con valor sobre 9
+                              par [j]= (parseInt(par[j]%10)) + (parseInt(par[j]/10));     //reduce valor a 1 digito suma
+                           }
+                        }
 
-
-let x = numerotarjeta.length;      //cantidad de elementos del string
-let numerotarjetainvertida ="";    //guarda  elementos de variable invertidos
-while (x>=0) {                      //verifica si se cumple condicion
-
-numerotarjetainvertida += numerotarjeta.charAt(x);  //envia ultima posicion del elemento a numerotarjetainvertida
-   x--;
-
+                  } else {
+                     impar.push(numerotarjetainvertida[i]);                                //posicion impar envia a su variable
+                    }
+let sum= par.concat(impar);
+parseInt(sum).value;
+console.log(sum);
+// let suma = sum.reduce( (a,b) => a + b,);
+               }
 }
-parseInt(numerotarjetainvertida,0);         //convierte string en numero
-
-//console.log(numerotarjetainvertida);
-
 })

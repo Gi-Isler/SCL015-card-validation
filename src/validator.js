@@ -2,5 +2,6 @@
 
 const validator = {
 validacion=()=>{
-}};
-export default validator;
+}
+//export default validator;
+};
