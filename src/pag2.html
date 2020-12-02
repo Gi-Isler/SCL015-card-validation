@@ -13,21 +13,26 @@
 
     <header class="Page-header">
       <img src = "logo.jpeg" width="700" height="350"/>   <!--imagen de fondo-->
-      <nav>
-       <a href="index.html">Inicio</a>  <!--enlazar a volver al inicio pag -->
-       <a href="tienda.html">Tienda</a>    <!--enlazar ir a tienda-->
+      <nav class="menu">
+        <ul>
+         <a href="index.html">Inicio</a>  <!--enlazar a volver al inicio pag -->
+         <a href="tienda.html">Tienda</a>    <!--enlazar ir a tienda-->
+        </ul>
       </nav>
-
+ </header>
+  <div class="contenedor">
+    <main class="bienvenida">
       <h1>   ¡Ups!<br>
-        Tarjeta Invalida
-      </h1>
-    </header>
-    <div class="contenedor">
-    <main>
+        Tarjeta Invalida </h1>
       <h2> Intentalo Nuevamente </h2>
-      <!-- campo de ingreso de numero de tarjeta--><!--ejemplifica lo que debe inrgesar--><!--campo obligatorio-->
-      <input type= "digito" id="user-caracteres" placeholder="     1234 5678 9874 9874 " required/>
-      <a class="boton_personalizado" href="index.html">Click</a> <!--inserta boton-->
+
+      <form action id="formulariotarjeta" class="formulariotarjeta" method="POST">
+        <label for="numerotarjeta"></label>
+
+                    <!-- campo de ingreso de numero de tarjeta-->
+         <input type= "number" class="numerotarjeta" id="numerotarjeta" placeholder="    Ingrese N° de Tarjeta    " minlength="15" maxlength="15" pattern="[0-9]+" required >
+      </form>
+      <button  id="validar" class="boton_personalizado">Click</button> <!--inserta boton-->
     </main>
     </div>
 
